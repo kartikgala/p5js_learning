@@ -1,11 +1,13 @@
 function setup() {
-  createCanvas(1920, 1080);
+  createCanvas(600, 600);
 }
 
 function draw() {
   background(100);
-  //fill(60, 60, 200);
+  smooth();
+  fill(60, 60, 200);
   strokeWeight(5);
   rectMode(CENTER); // to ditermine the center of the rectangle.
-  rect (mouseX, mouseY, 50, 50, 10); // creates an interactive rectangle with moving mouse.
+  rect(mouseX, mouseY, 50, 50, 10); // creates an interactive rectangle with moving mouse.
+  // triangle(0, 10, 20, 5, 50, 50, 50,50); //trying triangle funtion.
 }
