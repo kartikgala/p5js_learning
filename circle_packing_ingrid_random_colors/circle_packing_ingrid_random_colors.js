@@ -1,7 +1,7 @@
-var Spacing = 115;
-var Offset = 100;
-var minSize = 20;
-var maxSize = 100;
+var Spacing = 50;
+var Offset = 75;
+var minSize = 2;
+var maxSize = 30;
 var colorss = ['#17c3b2', '#ffcb77', '#fef9ef', '#fe6d73'];
 
 let xPos;
@@ -9,12 +9,12 @@ let yPos;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-   frameRate(5);
+   frameRate(32);
   rectMode(CENTER);
   background ('#264654');
   xPos = random(width);
   yPos = random(height);
-  noStroke();
+  //noStroke();
 }
 
 function draw() {
@@ -29,7 +29,7 @@ function draw() {
         fill(colorss[colorpicker]);
         let size = random(minSize, maxSize);
         ellipse(random(width), Offset + Spacing * j, size, size);
-        ellipse(Offset + Spacing * i, random(height), 50, 50);
+        //ellipse(Offset + Spacing * i, random(height), 50, 50);
       }
     }
   }

@@ -1,4 +1,4 @@
-var sizes = 50;
+var sizes =10;
 var colors = ['#17c3b2', '#ffcb77', '#fef9ef', '#fe6d73'];
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -22,5 +22,5 @@ function draw() {
   } else {
     stroke(width - sizes);
   }
-  ellipse(mouseX, mouseY, sizes, sizes);
+  ellipse(mouseX, mouseY, sizes/4, sizes/4);
 }
