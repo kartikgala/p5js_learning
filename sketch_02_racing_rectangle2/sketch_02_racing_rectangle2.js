@@ -1,7 +1,7 @@
 let song;
 
 function setup() {
-  song = loadSound('/assets/Sat_Narayan_short_Edit_1.mp3');
+  song = loadSound('http://localhost/P5JS/p5js_learning/sketch_02_racing_rectangle2/assets/Sat_Narayan_short_Edit_1.mp3');
   createCanvas(720, 200);
   background(255, 0, 0);
 }
