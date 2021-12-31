@@ -19,8 +19,8 @@ function setup() {
 
 function draw() {
 
-  var circleCountx = (windowWidth - 100 )/ Spacing;
-  var circleCounty = (windowHeight - 100)/ Spacing;
+  var circleCountx = (windowWidth - 5 )/ Spacing;
+  var circleCounty = (windowHeight - 5)/ Spacing;
 
   for (let c = 0; c < 12; c++) {
     for (let i = 0; i < circleCountx; i++) {
