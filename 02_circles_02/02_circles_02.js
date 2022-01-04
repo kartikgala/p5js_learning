@@ -1,7 +1,17 @@
+var circleX = 0;
+
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
+  background(255);
 }
 
 function draw() {
-  background(220);
-}
+  
+  circle (circleX, 300, 100 ,100);
+  circleX ++;
+
+  if (mouseX == circleX){
+    fill(255, 123, 255);
+  }
+    else(255);
+  }
