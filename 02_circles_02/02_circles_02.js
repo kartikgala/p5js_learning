@@ -4,6 +4,7 @@ let rad = 60; // Width of the shape
 let xpos, ypos; // Starting position of shape
 let xspeed = 5; // Speed of the shape
 let yspeed = 6; // Speed of the shape
+var colors = ['#17c3b2', '#ffcb77', '#fef9ef', '#fe6d73'];
 
 let xdirection = 1; // Left or Right
 let ydirection = 1; // Top to Bottom
@@ -37,10 +38,11 @@ function draw() {
   }
 
   // Draw the shape
-  ellipse(xpos, ypos, rad, rad);
+  ellipse((xpos), ypos, rad, rad);
 
   if (mouseX >= xpos-50 && mouseY <= ypos+50 && mouseY) {
-fill(random(225), random(255), random(255), 100);    
+    let colorpicker = int(random(colors.length));
+    fill(colors[colorpicker]);
   } else {
     fill(random(50));    
   }
