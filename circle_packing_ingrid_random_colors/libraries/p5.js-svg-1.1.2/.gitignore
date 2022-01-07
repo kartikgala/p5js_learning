@@ -1,0 +1,11 @@
+node_modules
+test/report
+npm-debug.log
+test/coverage
+.idea
+.tern-port
+.tern-project
+dist
+test/unit/bundle.js
+doc/reference
+test/test.html
