@@ -1,4 +1,4 @@
-let mySong;
+let mySong;    // song library
 let song, buttton, amp;
 let volHistory = [];
 
